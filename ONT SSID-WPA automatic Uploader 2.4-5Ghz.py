@@ -58,7 +58,7 @@ def start_process(browser, status_callback, location, ssid=None, password=None, 
         wait = WebDriverWait(driver, 15)
         driver.get(ONT_IP)
 
-        status_callback("⌛ Esperando carga de la página...")
+        status_callback("Esperando carga de la página...")
         time.sleep(0)
         wait.until(EC.presence_of_element_located((By.ID, "txt_Username")))
 
